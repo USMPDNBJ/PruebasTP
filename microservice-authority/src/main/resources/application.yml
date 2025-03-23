@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: msvc-authority
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://161.132.55.86:1433;databaseName=BD_VISHE;encrypt=false;
+    username: sa
+    password: Lima1234..
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: sqlserver
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

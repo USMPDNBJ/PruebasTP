@@ -1,0 +1,39 @@
+INSERT INTO [dbo].[t_usuario]
+           ([activo]
+           ,[fecha_nacimiento]
+           ,[fecha_registro]
+           ,[apellido_materno]
+           ,[apellido_paterno]
+           ,[correo]
+           ,[dni]
+           ,[genero]
+           ,[nombre])
+     VALUES
+           (1  -- activo, 1 para activo, 0 para inactivo
+           ,'1990-05-10 00:00:00.000000'  -- fecha_nacimiento, formato datetime2(6)
+           ,'2025-03-21 14:00:00.000000'  -- fecha_registro, formato datetime2(6)
+           ,'Gomez'  -- apellido_materno
+           ,'Lopez'  -- apellido_paterno
+           ,'johndoe@example.com'  -- correo
+           ,'12345678'  -- dni
+           ,'Masculino'  -- genero
+           ,'John'  -- nombre
+           )
+GO
+
+
+
+INSERT INTO [dbo].[t_authority]
+           ([usu_id]
+           ,[fecha_registro]
+           ,[contrasena]
+           ,[rol]
+           ,[username])
+     VALUES
+           (1                  -- usu_id: un valor entero de ejemplo
+           , '2025-03-21T10:00:00.0000000'  -- fecha_registro: un valor datetime2(6) de ejemplo
+           , '123'       -- contrasena: una cadena de texto (varchar)
+           , 'Usuario'      -- rol: un valor varchar para el rol
+           , 'Usuario'     -- username: un valor varchar para el nombre de usuario
+           )
+GO
