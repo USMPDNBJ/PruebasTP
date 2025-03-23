@@ -29,6 +29,7 @@ public class AuthorityController {
     public ResponseEntity<?> findById(@PathVariable Integer id){
         return ResponseEntity.ok(authorityService.findById(id));
     }
+
     @GetMapping("/search-by-usuario/{idUsuario}")
     public ResponseEntity<?> findByIdAuthority(@PathVariable Integer idUsuario){
         return ResponseEntity.ok(authorityService.findByIdUsuario(idUsuario));

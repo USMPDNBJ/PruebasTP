@@ -20,7 +20,8 @@
   <modules>
     <module>microservice-eureka</module>
     <module>microservice-gateway2</module>
-    <module>microservice-usuario</module>
+    <module>microservice-authority</module>
+    <module>microservice-colmena</module>
     <module>microservice-usuario</module>
   </modules>
 

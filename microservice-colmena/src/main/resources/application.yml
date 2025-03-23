@@ -1,0 +1,20 @@
+server:
+  port: 7090
+
+spring:
+  application:
+    name: msvc-colmena
+  config:
+    import: classpath:/application-secrets.yml
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: sqlserver
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

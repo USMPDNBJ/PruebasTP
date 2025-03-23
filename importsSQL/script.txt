@@ -34,6 +34,6 @@ INSERT INTO [dbo].[t_authority]
            , '2025-03-21T10:00:00.0000000'  -- fecha_registro: un valor datetime2(6) de ejemplo
            , '123'       -- contrasena: una cadena de texto (varchar)
            , 'Usuario'      -- rol: un valor varchar para el rol
-           , 'Usuario'     -- username: un valor varchar para el nombre de usuario
+           , 'Usuario'     -- username: un valor varchar para el nombre de colmena
            )
 GO
